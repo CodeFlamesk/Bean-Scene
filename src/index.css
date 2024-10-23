@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.body {
+  height: 100%;
+}
+
+@layer base {
+  body {
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    font-display: swap;
+    color: #FFF;
+  }
+
+  .logo {
+    font-family: 'Oswald', sans-serif;
+  }
+
+  .menuSelect {
+    @apply text-sm font-semibold;
+  }
+}
+
+@layer utilities {
+  .nav-link {
+    @apply hover:text-orange-btn duration-300 transition-all ease-in-out hidden md:block;
+  }
+
+  .button-header {
+    @apply hidden sm:block;
+  }
+
+  .button-orange {
+    @apply text-dark bg-orange-btn py-[14px] px-[27px] rounded-3xl
+  }
+
+  .text-coffee {
+    font-size: clamp(5.625rem, 2.331rem + 23.958vw, 20rem);
+  }
+
+  .clicker-fonts {
+    font-family: 'Clicker Script';
+    font-weight: 400;
+    font-style: normal;
+    color: #FFF;
+  }
+}
