@@ -10,6 +10,7 @@ import AboutShop from '@components/Section/AboutShop';
 import GetChance from '@components/Section/GetChance';
 import Subscribe from '@components/Section/Subscribe';
 import Footer from '@components/Section/Footer';
+import SliderComment from '@components/Section/Slider/CommentsSlider';
 const Home = () => {
     return (
         <>
@@ -81,6 +82,7 @@ const Home = () => {
                 <AboutShop />
             </section>
             <GetChance />
+            <SliderComment />
             <Subscribe />
             <Footer />
         </>
