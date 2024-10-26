@@ -11,16 +11,34 @@ import GetChance from '@components/Section/GetChance';
 import Subscribe from '@components/Section/Subscribe';
 import Footer from '@components/Section/Footer';
 import SliderComment from '@components/Section/Slider/CommentsSlider';
+import { useEffect, useState } from 'react';
+import BurgerBtn from '@components/BurgerBtn';
+
 const Home = () => {
+    const [isOpen, setIsOpen] = useState(false);
+
+    const toggleMenu = () => {
+        setIsOpen(!isOpen);
+    };
+
+    useEffect(() => {
+        if (isOpen) {
+            document.body.classList.add('overflow-hidden');
+        } else {
+            document.body.classList.remove('overflow-hidden');
+        }
+
+        return () => document.body.classList.remove('overflow-hidden');
+    }, [isOpen]);
     return (
         <>
             <div className='flex flex-col bg-cover bg-center bg-no-repeat' style={{ backgroundImage: `url(${imgBackground})`, }}>
                 <Container>
 
                     <header className="flex flex-wrap justify-between items-center w-full pt-5 gap-x-8">
-                        <p className="clicker-fonts text-[35px] whitespace-nowrap">Bean Scene</p>
+                        <p className="clicker-fonts text-[40px] whitespace-nowrap  ">Bean Scene</p>
 
-                        <ul className="flex flex-wrap gap-[30px]  text-sm font-medium items-center justify-center flex-1">
+                        <ul className="flex flex-wrap gap-x-[30px] gap-y-3  text-sm font-medium items-center justify-center flex-1">
                             <li>
                                 <a href="#" className="nav-link">Home</a>
                             </li>
@@ -36,11 +54,52 @@ const Home = () => {
                         </ul>
 
                         <div className="flex gap-[35px] items-center whitespace-nowrap">
-                            <button type="button" className=" font-medium text-sm hover:text-orange-btn duration-300 transition-all ease-in-out button-header">Sign In</button>
-                            <button type="button" className=" text-sm  button-header button-orange">Sign Up</button>
+                            <button type="button" className=" font-medium text-base hover:text-orange-btn duration-300 transition-all ease-in-out button-header">Sign In</button>
+                            <button type="button" className=" text-base  button-header button-orange">Sign Up</button>
+                            <button
+                                aria-label="Main Menu"
+                                onClick={toggleMenu}
+                                className={`${isOpen ? 'opened ' : ''} transition-all duration-300 md:hidden z-50`}
+                            >
+                                <BurgerBtn />
+                            </button>
+
                         </div>
+
                     </header>
                 </Container>
+                <div
+                    className={`fixed inset-0 h-screen w-full flex flex-col items-center justify-center bg-color-coffee z-50 md:hidden transition-all duration-500 ${isOpen ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-full'
+                        }`}
+                >
+                    <ul className="flex flex-col gap-8 text-xl font-medium text-white transform transition-transform items-center duration-500 ease-in-out">
+                        <li>
+                            <a href="https://example.com/help" target='_blank' onClick={toggleMenu} className='mob-link'>Home</a>
+                        </li>
+                        <li>
+                            <a href="https://example.com/help" target='_blank' onClick={toggleMenu} className='mob-link'>Menu</a>
+                        </li>
+                        <li>
+                            <a href="https://example.com/help" target='_blank' onClick={toggleMenu} className='mob-link'>About Us</a>
+                        </li>
+                        <li>
+                            <a href="https://example.com/help" target='_blank' onClick={toggleMenu} className='mob-link'>Contact Us</a>
+                        </li>
+                    </ul>
+                    <button type="button" className=" mt-8 font-medium text-xl hover:text-orange-btn duration-300 transition-all ease-in-out sm:hidden block">Sign In</button>
+                    <button type="button" className="mt-8 text-xl font-medium sm:hidden block">Sign Up</button>
+
+                    <button
+                        aria-label="Main Menu"
+                        onClick={toggleMenu}
+                        className={`${isOpen ? 'opened ' : ''} absolute top-5 right-5 text-white text-3xl`}
+                    >
+                        <BurgerBtn />
+                    </button>
+
+                </div>
+
+
 
                 <Container>
                     <div className='flex flex-col items-start pt-[58px] md:pt-[116px]  '>
@@ -82,8 +141,11 @@ const Home = () => {
                 <AboutShop />
             </section>
             <GetChance />
+
             <SliderComment />
+
             <Subscribe />
+
             <Footer />
         </>
     )

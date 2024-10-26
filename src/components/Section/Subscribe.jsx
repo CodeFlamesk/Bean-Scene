@@ -1,9 +1,16 @@
 import Container from "@components/Container";
 import SubscribeBackground from "../img/getChance/get_chance_background.webp";
+import CupCoffe from '../img/CommentsImg/coffee-cup.webp';
 
 const Subscribe = () => {
     return (
-        <section className='flex bg-cover bg-center bg-no-repeat relative overflow-hidden' style={{ backgroundImage: `url(${SubscribeBackground})`, }}>
+        <section className='flex bg-cover bg-center bg-no-repeat relative  ' style={{ backgroundImage: `url(${SubscribeBackground})`, }}>
+            <div className='absolute z-50 top-[-100px] lg:bottom-[-122px]  w-[16%]'>
+                <img src={CupCoffe} alt="cup-coffe" />
+            </div>
+            <div className='absolute scale-x-[-1] right-0 z-50 top-[-100px] lg:bottom-[-122px]  w-[16%]'>
+                <img src={CupCoffe} alt="cup-coffe" />
+            </div>
             <Container style=" flex-col items-center py-10 md:py-20  ">
                 <p className="text-white best-coffee font-bold text-center">Subscribe to get the Latest News</p>
                 <p className="text-white text-base md:text-xl leading-[34px] text-center pt-4 ">Don’t miss out on our latest news, updates, tips and special offers</p>
