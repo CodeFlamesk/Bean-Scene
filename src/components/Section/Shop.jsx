@@ -42,10 +42,10 @@ const datashop = [
 const Shop = () => {
     return (
         <Container style='flex-col mt-[68px] md:mt-[150px] items-center  '>
-            <p className='text-color-coffee best-coffee font-bold text-center'>
+            <p className='text-color-coffee best-coffee font-bold text-center bottom-anim'>
                 Enjoy a new blend of coffee style
             </p>
-            <p className='text-grey text-base md:text-xl pt-4 text-center'>
+            <p className='text-grey text-base md:text-xl pt-4 text-center bottom-anim'>
                 Explore all flavours of coffee with us. There is always a new cup worth experiencing.
             </p>
 
@@ -63,8 +63,8 @@ const Shop = () => {
 
 const ShopItem = ({ shopImg, name, description, price, textButton }) => {
     return (
-        <div className="flex flex-col bg-orange-lite border border-orange-btn border-opacity-40 items-center relative max-w-[280px]">
-            <img src={shopImg} alt={name} className="w-full" />
+        <div className="flex flex-col bg-orange-lite border border-orange-btn border-opacity-40 items-center relative max-w-[280px] bottom-anim">
+            <img src={shopImg} alt={name} className="w-full" loading="lazy" />
             <h3 className="text-color-coffee text-[22px] font-bold pt-[14px] ">{name}</h3>
             <p className="text-base text-dark pt-[6px]">{description}</p>
             <p className="text-color-coffee font-bold text-lg mb-[42px] pt-[6px]">{price}</p>

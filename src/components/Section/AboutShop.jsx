@@ -34,9 +34,9 @@ const aboutShop = [
 const AboutShop = () => {
     return (
         <Container style='flex-col mt-[82px] md:mt-[106px] items-center  mb-[68px] md:mb-[82px]'>
-            <p className='text-color-coffee best-coffee font-bold text-center'>
+            <p className='text-color-coffee best-coffee font-bold text-center bottom-anim'>
                 Why are we different?  </p>
-            <p className='text-grey text-base md:text-xl pt-4 text-center'>
+            <p className='text-grey text-base md:text-xl pt-4 text-center bottom-anim'>
                 We don’t just make your coffee, we make your day!   </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-5 pt-8 gap-y-10">
@@ -46,17 +46,17 @@ const AboutShop = () => {
                     ))
                 }
             </div>
-            <p className="text-grey text-center text-base md:text-xl pt-8  ">Great ideas start with great coffee, Lets help you achieve that</p>
-            <p className="text-color-coffee text-started font-bold   ">Get started today.</p>
-            <button type="button" className="button-orange text-base font-bold mt-6"> Join Us</button>
+            <p className="text-grey text-center text-base md:text-xl pt-8  bottom-anim">Great ideas start with great coffee, Lets help you achieve that</p>
+            <p className="text-color-coffee text-started font-bold  bottom-anim ">Get started today.</p>
+            <button type="button" className="button-orange text-base font-bold mt-6 bottom-anim"> Join Us</button>
         </Container>
     );
 };
 
 const AboutShopItem = ({ aboutImg, name, description }) => {
     return (
-        <div className="flex flex-col bg-orange-lite border border-orange-btn hover:bg-color-hover duration-300 transition-all ease-in-out border-opacity-40 items-center relative max-w-[280px] px-[10px] py-4 md:py-9">
-            <img src={aboutImg} alt={name} />
+        <div className="flex flex-col bg-orange-lite border border-orange-btn hover:bg-color-hover duration-300 transition-all ease-in-out border-opacity-40 items-center relative max-w-[280px] px-[10px] py-4 md:py-9 bottom-anim">
+            <img src={aboutImg} alt={name} loading="lazy" />
             <h3 className="pt-4 md:pt-[25px] text-color-coffee text-[22px] md:text-[26px] font-bold text-center ">{name}</h3>
             <p className="text-base md:text-xl pt-[8px] text-grey text-center mt-auto">{description}</p>
 

@@ -1,21 +1,12 @@
 import React from 'react';
-import { lazy } from 'react';
 import { Route, Routes } from 'react-router-dom';
 
-import Home from '@pages/Home';
-
-import Layout from '../Layout/Layout';
-
+import Home from '@pages/Home'; // Імпорт домашньої сторінки
 
 const AppRouter = () => {
     return (
         <Routes>
-            <Route path='/' element={<Layout />}>
-                <Route index element={<Home />} />
-
-
-            </Route>
-
+            <Route path='/' element={<Home />} />
         </Routes>
     );
 };

@@ -8,12 +8,12 @@ const CommentsSlide = ({ text, author, profession, authorImg }) => {
             <div className='swiper-button-prev text-color-coffee hover:text-orange-btn  hover:bg-color-coffee hover:border-2 duration-300 transition-all ease-in-out border-orange-btn box-border hidden sm:flex  absolute z-50 w-[82px] h-[82px] left-[-41px]   top-[42%]  border-2 justify-center  items-center cursor-pointer border-l-yellow-lite bg-orange-btn rounded-2xl '>
                 <PrevBtn />
             </div>
-            <img src={Quotation} alt="quotation" className='absolute w-[34px] lg:w-[9%] left-6 lg:left-10 top-4 lg:top-[60px]' />
+            <img src={Quotation} alt="quotation" className='absolute w-[34px] lg:w-[9%] left-6 lg:left-10 top-4 lg:top-[60px]' loading="lazy" />
             <p className="text-grey text-xs sm:text-sm lg:text-lg font-semibold text-center leading-9">{text}</p>
             <p className="text-color-coffee font-bold text-2xl sm:text-[32px] pt-3 lg:pt-7 text-center" >{author}</p>
             <p className=" text-grey text-center text-xl leading-[32px] ">{profession}</p>
             <div className="w-[112px] h-[112px] rounded-2xl overflow-hidden absolute bottom-[-56px] z-50 ">
-                <img src={authorImg} alt="author" className="w-full h-full object-cover" />
+                <img src={authorImg} alt="author" className="w-full h-full object-cover" loading="lazy" />
             </div>
             <div className='swiper-button-next text-color-coffee hover:text-orange-btn hover:bg-color-coffee hover:border-2 duration-300 transition-all ease-in-out border-orange-btn box-border hidden sm:flex absolute z-40 w-[82px] h-[82px] right-[-41px]    top-[42%] rotate-180 border-2 justify-center  items-center cursor-pointer border-l-yellow-lite bg-orange-btn rounded-2xl '>
                 <PrevBtn />
