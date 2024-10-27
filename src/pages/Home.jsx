@@ -1,5 +1,5 @@
 import Container from '@components/Container';
-import imgBackground from '../components/img/home_background.jpeg';
+import imgBackground from '../components/img/home_background.webp';
 import imgCapCoffee from '../components/img/cup_coffee.webp';
 import CoffeeBlast from "../components/img/coffee_blast.webp";
 import Shop from '@components/Section/Shop';

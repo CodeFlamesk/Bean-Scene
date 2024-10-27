@@ -56,7 +56,7 @@ const AboutShop = () => {
 const AboutShopItem = ({ aboutImg, name, description }) => {
     return (
         <div className="flex flex-col bg-orange-lite border border-orange-btn hover:bg-color-hover duration-300 transition-all ease-in-out border-opacity-40 items-center relative max-w-[280px] px-[10px] py-4 md:py-9 bottom-anim">
-            <img src={aboutImg} alt={name} loading="lazy" />
+            <img src={aboutImg} alt={name} loading="lazy" width="88" height="88" />
             <h3 className="pt-4 md:pt-[25px] text-color-coffee text-[22px] md:text-[26px] font-bold text-center ">{name}</h3>
             <p className="text-base md:text-xl pt-[8px] text-grey text-center mt-auto">{description}</p>
 

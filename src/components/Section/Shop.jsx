@@ -64,7 +64,7 @@ const Shop = () => {
 const ShopItem = ({ shopImg, name, description, price, textButton }) => {
     return (
         <div className="flex flex-col bg-orange-lite border border-orange-btn border-opacity-40 items-center relative max-w-[280px] bottom-anim">
-            <img src={shopImg} alt={name} className="w-full" loading="lazy" />
+            <img src={shopImg} alt={name} className="w-full" loading="lazy" width='280' height='222' />
             <h3 className="text-color-coffee text-[22px] font-bold pt-[14px] ">{name}</h3>
             <p className="text-base text-dark pt-[6px]">{description}</p>
             <p className="text-color-coffee font-bold text-lg mb-[42px] pt-[6px]">{price}</p>
