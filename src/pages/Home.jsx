@@ -63,7 +63,7 @@ const Home = () => {
                             <li><a href="https://www.upwork.com/freelancers/~01a687c8f95b7913d7" target='_blank' className="nav-link">Contact Us</a></li>
                         </ul>
                         <div className="flex gap-[35px] items-center whitespace-nowrap">
-                            <button type="button" className="font-medium text-base hover:text-orange-btn duration-300 transition-all ease-in-out button-header">Sign In</button>
+                            <button type="button" className="font-medium text-base hover:text-orange-btn duration-300 transition-all ease-in-out button-header">Log In</button>
                             <button type="button" className="text-base button-header button-orange">Sign Up</button>
                             <button aria-label="Main Menu" onClick={toggleMenu} className={`${isOpen ? 'opened' : ''} transition-all duration-300 md:hidden z-50`}>
                                 <BurgerBtn />
@@ -79,7 +79,7 @@ const Home = () => {
                         <li><a href="https://example.com/help" target='_blank' onClick={toggleMenu} className='mob-link'>About Us</a></li>
                         <li><a href="https://www.upwork.com/freelancers/~01a687c8f95b7913d7" target='_blank' onClick={toggleMenu} className='mob-link'>Contact Us</a></li>
                     </ul>
-                    <button type="button" className="mt-8 font-medium text-xl hover:text-orange-btn duration-300 transition-all ease-in-out sm:hidden">Sign In</button>
+                    <button type="button" className="mt-8 font-medium text-xl hover:text-orange-btn duration-300 transition-all ease-in-out sm:hidden">Log In</button>
                     <button type="button" className="mt-8 text-xl font-medium hover:text-orange-btn duration-300 transition-all ease-in-out sm:hidden">Sign Up</button>
                     <button aria-label="Main Menu" onClick={toggleMenu} className={`${isOpen ? 'opened' : ''} absolute top-5 right-5 text-white text-3xl`}>
                         <BurgerBtn />
