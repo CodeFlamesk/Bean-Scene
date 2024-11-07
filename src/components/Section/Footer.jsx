@@ -7,7 +7,7 @@ import TwitterIcon from "./img/Twitter";
 const Footer = () => {
     return (
         <footer className='flex  bg-cover bg-center bg-no-repeat relative overflow-hidden' style={{ backgroundImage: `url(${FooterBackground})`, }}>
-            <Container style='flex-col lg:flex-row pt-10 lg:pt-[162px] pb-[72px] justify-between gap-6 '>
+            <Container style='flex-col lg:flex-row pt-10 lg:pt-[72px] pb-[72px] justify-between gap-6 '>
                 {/* left хрєнь */}
                 <div className=" flex flex-col gap-5 lg:max-w-[380px] bottom-anim">
                     <p className="clicker-fonts text-[54px] text-white">Bean Scene</p>
