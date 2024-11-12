@@ -18,10 +18,25 @@ gsap.registerPlugin(ScrollTrigger);
 const Home = () => {
     const [isOpen, setIsOpen] = useState(false);
 
+
+
+
+
     const toggleMenu = () => {
         setIsOpen(!isOpen);
+        if (!isOpen) {
+            document.body.classList.add('overflow-hidden');
+        } else {
+            document.body.classList.remove('overflow-hidden');
+        }
     };
 
+    useEffect(() => {
+
+        return () => {
+            document.body.classList.remove('overflow-hidden');
+        };
+    }, []);
     useEffect(() => {
 
         const tl = gsap.timeline({ defaults: { duration: 1, ease: "power2.inOut" } });

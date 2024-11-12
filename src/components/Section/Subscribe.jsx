@@ -19,7 +19,7 @@ const Subscribe = () => {
                         <input
                             id="email"
                             type="email"
-                            className="inputs  border-2 border-white input-shadow box-border h-[50px] sm:h-[69px] input-shadow w-full text-base sm:text-xl  leading-[34px] text-dark pl-[26px] placeholder:text-grey-second focus:outline-none focus:ring-0"
+                            className="inputs  border-2 border-white input-shadow box-border h-[50px] sm:h-[69px]  w-full text-base sm:text-xl  leading-[34px] text-dark pl-[26px] placeholder:text-grey-second focus:outline-none focus:ring-0"
                             placeholder="Enter your mail"
                             required
                         />
