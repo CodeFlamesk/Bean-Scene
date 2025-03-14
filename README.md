@@ -25,6 +25,11 @@ Built using **React, Tailwind CSS, and GSAP**, this landing page features dynami
 - Implementing a booking system for reservations.  
 - Enhancing accessibility features for better usability.  
 
+## Installation & Run
+
+1. Install dependencies: `npm i`
+2. Start the project: `npm run dev`
+   
 ## License  
 
 This project was created for learning purposes and is not intended for commercial use.  
