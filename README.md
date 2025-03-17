@@ -9,9 +9,9 @@ Built using **React, Tailwind CSS, and GSAP**, this landing page features dynami
 
 ## Features  
 
-- **GSAP Animations**: Smooth and engaging animations for a modern look.  
-- **Responsive Design**: Optimized for various screen sizes.  
-- **Clean and Maintainable Code**: Well-structured for easy updates.  
+- **GSAP Animations** – smooth and dynamic effects for a modern and stylish interface.  
+- **Responsiveness** – ensures proper display on devices with different screen sizes.  
+- **Structured Code** – clean and easy to understand, simplifying future updates and maintenance.  
 
 ## Technologies Used  
 
