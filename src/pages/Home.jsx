@@ -74,8 +74,8 @@ const Home = () => {
                         <ul className="flex flex-wrap gap-x-[30px] gap-y-3 text-sm font-medium items-center justify-center flex-1">
                             <li><a href="https://example.com/help" target='_blank' className="nav-link">Home</a></li>
                             <li><a href="https://example.com/help" target='_blank' className="nav-link">Menu</a></li>
-                            <li><a href="https://www.upwork.com/freelancers/~01a687c8f95b7913d7" target='_blank' className="nav-link">About Us</a></li>
-                            <li><a href="https://www.upwork.com/freelancers/~01a687c8f95b7913d7" target='_blank' className="nav-link">Contact Us</a></li>
+                            <li><a href="mailto:volodymyr.kravets.dev@gmail.com" target='_blank' className="nav-link">About Us</a></li>
+                            <li><a href="mailto:volodymyr.kravets.dev@gmail.com" target='_blank' className="nav-link">Contact Us</a></li>
                         </ul>
                         <div className="flex gap-[35px] items-center whitespace-nowrap">
                             <button type="button" className="font-medium text-base hover:text-orange-btn duration-300 transition-all ease-in-out button-header">Log In</button>
@@ -92,7 +92,7 @@ const Home = () => {
                         <li><a href="https://example.com/help" target='_blank' onClick={toggleMenu} className='mob-link'>Home</a></li>
                         <li><a href="https://example.com/help" target='_blank' onClick={toggleMenu} className='mob-link'>Menu</a></li>
                         <li><a href="https://example.com/help" target='_blank' onClick={toggleMenu} className='mob-link'>About Us</a></li>
-                        <li><a href="https://www.upwork.com/freelancers/~01a687c8f95b7913d7" target='_blank' onClick={toggleMenu} className='mob-link'>Contact Us</a></li>
+                        <li><a href="mailto:volodymyr.kravets.dev@gmail.com" target='_blank' onClick={toggleMenu} className='mob-link'>Contact Us</a></li>
                     </ul>
                     <button type="button" className="mt-8 font-medium text-xl hover:text-orange-btn duration-300 transition-all ease-in-out sm:hidden">Log In</button>
                     <button type="button" className="mt-8 text-xl font-medium hover:text-orange-btn duration-300 transition-all ease-in-out sm:hidden">Sign Up</button>
